@@ -1,0 +1,25 @@
+.button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 0.5rem;
+  border: 1px solid var(--fo-palette-divider);
+  background: var(--fo-palette-background-viewBarButtons);
+  box-shadow: 0 2px 40px var(--fo-palette-custom-shadow);
+  color: var(--fo-palette-text-secondary);
+}
+
+.button:hover:enabled {
+  background: var(--fo-palette-primary-plainColor);
+  color: var(--fo-palette-text-buttonHighlight);
+  border-color: var(--fo-palette-primary-plainColor);
+}
+
+.button:disabled {
+  border-color: var(--fo-palette-dividerDisabled);
+  cursor: not-allowed;
+  color: var(--fo-palette-text-tertiary);
+  background: var(--fo-palette-background-level3);
+}

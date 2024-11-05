@@ -1,0 +1,53 @@
+{
+    "name": "@fiftyone/ksplats-plugin",
+    "version": "1.0.0",
+    "main": "src/index.tsx",
+    "type": "module",
+    "license": "MIT",
+    "fiftyone": {
+        "script": "dist/index.umd.js"
+    },
+    "scripts": {
+        "dev": "nodemon --watch ./src --ext js,jsx,ts,tsx --exec 'yarn build'",
+        "build": "bash -c 'source .env.dev && vite build'",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@fiftyone/components": "/home/dan/Documents/fiftyone/app/packages/components",
+        "@fiftyone/looker": "/home/dan/Documents/fiftyone/app/packages/looker",
+        "@fiftyone/operators": "/home/dan/Documents/fiftyone/app/packages/operators",
+        "@fiftyone/plugins": "/home/dan/Documents/fiftyone/app/packages/plugins",
+        "@fiftyone/relay": "/home/dan/Documents/fiftyone/app/packages/relay",
+        "@fiftyone/state": "/home/dan/Documents/fiftyone/app/packages/state",
+        "@fiftyone/utilities": "/home/dan/Documents/fiftyone/app/packages/utilities",
+        "@mkkellogg/gaussian-splats-3d": "^0.4.5",
+        "@vitejs/plugin-react": "^4.3.3",
+        "lru-cache": "^11.0.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "recoil": "^0.7.7",
+        "three": "^0.160.0"
+    },
+    "resolutions": {
+        "@fiftyone/utilities": "/home/dan/Documents/fiftyone/app/packages/utilities",
+        "@fiftyone/state": "/home/dan/Documents/fiftyone/app/packages/state",
+        "@fiftyone/looker": "/home/dan/Documents/fiftyone/app/packages/looker",
+        "@fiftyone/components": "/home/dan/Documents/fiftyone/app/packages/components",
+        "@fiftyone/relay": "/home/dan/Documents/fiftyone/app/packages/relay",
+        "@fiftyone/operators": "/home/dan/Documents/fiftyone/app/packages/operators",
+        "@fiftyone/plugins": "/home/dan/Documents/fiftyone/app/packages/plugins"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^15.3.0",
+        "@types/node": "^22.7.6",
+        "@vitejs/plugin-react": "^4.3.3",
+        "@voxel51/fiftyone-js-plugin-build": "^1.0.22",
+        "nodemon": "^3.1.7",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10",
+        "vite-plugin-externalize-deps": "^0.8.0",
+        "vite-plugin-top-level-await": "^1.4.4",
+        "vite-plugin-wasm": "^3.3.0"
+    },
+    "packageManager": "yarn@4.5.1"
+}

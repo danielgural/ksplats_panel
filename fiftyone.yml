@@ -1,0 +1,7 @@
+name: "@danielgural/ksplats"
+description: Ksplats_Panel
+version: 1.0.0
+fiftyone:
+ version: "*"
+operators:
+ - Ksplats_Panel

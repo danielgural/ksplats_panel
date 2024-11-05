@@ -1,0 +1,1 @@
+export const MAX_SPLATS_IN_CACHE = 3;
