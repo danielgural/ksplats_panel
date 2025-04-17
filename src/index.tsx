@@ -1,6 +1,8 @@
 import * as fop from "@fiftyone/plugins";
 import * as futil from "@fiftyone/utilities";
-import { KsplatsFileDescriptor, KsplatsViewer } from "./KsplatsPanel.tsx";
+import { isSplat } from "./KsplatsPanel";
+import { KsplatsViewer } from "./KsplatsPanel";
+
 
 fop.registerComponent({
   name: "Ksplats",
@@ -8,10 +10,7 @@ fop.registerComponent({
   component: KsplatsViewer,
   activator: (ctx) => {
     // only activate if schema has splat file
-    return futil.doesSchemaContainEmbeddedDocType(
-      ctx.schema,
-      KsplatsFileDescriptor.EMBEDDED_DOC_TYPE
-    );
+    return true;
   },
   type: fop.PluginComponentType.Panel,
   panelOptions: {
